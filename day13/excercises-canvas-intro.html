@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Canvas Intro Excercises</title>
+
+  <style>
+    canvas {
+      border: 1px solid red;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="example" width="100" height="100"></canvas>
+
+  <script>
+    function draw() {
+      var canvas = document.getElementById('example');
+      var ctx = canvas.getContext('2d');
+
+
+      // outter curved edges rectangle
+
+      // ctx.fillStyle = 'orange';
+      // ctx.beginPath();
+      // ctx.moveTo(10, 10);
+      // ctx.lineTo(10, 90);
+      // ctx.quadraticCurveTo(10, 95, 15, 95);
+      // // ctx.moveTo(15, 95);
+      // ctx.lineTo(85, 95);
+      // ctx.quadraticCurveTo(90, 95, 90, 90);
+      // // ctx.moveTo(90, 90);
+      // ctx.lineTo(90, 10);
+      // ctx.quadraticCurveTo(90, 5, 85, 5);      
+      // // ctx.moveTo(85, 5);
+      // ctx.lineTo(15, 5);
+      // ctx.quadraticCurveTo(10, 5, 10, 10);      
+      // ctx.stroke();
+      // ctx.fill();
+
+
+
+      // small ball lower left corner
+
+      // ctx.fillStyle = 'black';
+      // ctx.beginPath();
+      // var x = 30; // x coordinate
+      // var y = 75; // y coordinate
+      // var radius = 10; // Arc radius
+      // var startAngle = 0; // Starting point on circle
+      // var endAngle = Math.PI*2; // End point on circle
+      // ctx.arc(x, y, radius, startAngle, endAngle, true);
+      // ctx.stroke();
+      // ctx.fill();
+
+      // curved line 1 - quadratic
+      // ctx.fillStyle = 'black'
+      // ctx.beginPath();
+      // ctx.moveTo(20, 40);
+      // ctx.lineTo(20, 55);
+      // ctx.quadraticCurveTo(50, 50, 50, 85);
+      // // ctx.moveTo(50, 85);
+      // ctx.lineTo(65, 85);
+      // ctx.quadraticCurveTo(65, 35, 20, 40);
+      // ctx.stroke();
+      // ctx.fill();
+
+      // line 1 - arc
+
+      // ctx.fillStyle = 'black'
+      // ctx.beginPath();
+      // // ctx.moveTo(20, 40);
+      // ctx.arc(20, 85, 40, 1.5 * Math.PI, 0);
+      // ctx.lineWidth = 15;
+      // ctx.stroke();
+
+
+      // line 2 - arc
+
+      // ctx.fillStyle = 'black'
+      // ctx.beginPath();
+      // // ctx.moveTo(20, 40);
+      // ctx.arc(20, 85, 60, 1.5 * Math.PI, 0);
+      // ctx.lineWidth = 15;
+      // ctx.stroke();
+
+
+      // external cuverd line 2
+
+      // ctx.beginPath();
+      // ctx.moveTo(20, 20);
+      // ctx.lineTo(20, 35);
+      // ctx.quadraticCurveTo(75, 30, 70, 85);
+      // // ctx.moveTo(70, 85);
+      // ctx.lineTo(85, 85);
+      // ctx.quadraticCurveTo(90, 10, 20, 20);
+      // ctx.stroke();
+
+      // // nine lines
+      // ctx.beginPath();
+      // for (let y = 10; y < 100; y += 10)  {
+      //   ctx.moveTo(10,y);
+      //   ctx.lineTo(90, y);
+      // }
+
+      // ctx.stroke();
+
+
+      // // black triangle uplifted
+      // ctx.beginPath();
+      // ctx.moveTo(75, 50);
+      // ctx.lineTo(100, 75);
+      // ctx.lineTo(100, 25);
+      // ctx.fill();
+
+      // // black triangle 
+
+      // ctx.beginPath();
+      // ctx.moveTo(50, 10);
+      // ctx.lineTo(10, 70);
+      // ctx.lineTo(90, 70);
+      // ctx.fill();
+
+      // curves
+      // ctx.beginPath();
+      // ctx.moveTo(10, 90);
+      // // control = (60,10) goal=(90,90)
+      // ctx.quadraticCurveTo(60, 10, 90, 90);
+      // ctx.lineTo(60, 10);
+      // ctx.closePath();
+      // ctx.stroke();
+
+      // Arcs
+      // ctx.beginPath();
+      // var x = 100; // x coordinate
+      // var y = 75; // y coordinate
+      // var radius = 50; // Arc radius
+      // var startAngle = 0; // Starting point on circle
+      // var endAngle = Math.PI*2; // End point on circle
+      // ctx.arc(x, y, radius, startAngle, endAngle, true);
+      // ctx.moveTo(290,75)
+      // ctx.arc(250, 75, 40, 0, endAngle, true);
+      // ctx.stroke();
+      // // ctx.fill();
+    }
+    draw();
+  </script>
+</body>
+</html>

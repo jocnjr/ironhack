@@ -1,0 +1,46 @@
+zuadinha a documentacao da proxima aula
+
+jah temos dois ajustes..
+Setting an HTML element content> primeiro comentario no primeiro bloco de texto // set the HTML *conente*
+nao foi definida a variavel otherElement o que causa erro no exemplo
+
+JOC [9:33 PM]
+Note that the property names may differ from CSS; (i.e. backgroundColor *intead* of background-color)
+mais um typo
+
+Guilherme [9:38 PM]
+Eee caraio
+
+JOC [9:55 PM]
+Accessing First Found Selector
+primeiro bullet - deveria ser element?
+o exmplo diz document.querySelector(selectors);
+document seria o element?
+o bullet deveria estar abaixo do var firstMouse = document.querySelector('.mouse');
+e o firstMouse ser o "is an element", nao?
+
+JOC [11:12 PM]
+dom-manipulation
+primeiro codigo html comeca com <!--index  html --> - bad practice (edited)
+linter nao gosta
+paragraph element para mim esta na linha 10 e nao 11
+
+Guilherme [11:17 PM]
+Tem um que ele faz um HTML com class mas tenta puxar getelementbyid
+Amanhã cedo vou tentar mandar essas correções pra eles por git
+Mas melhor tirar daqui, que esse Slack apaga muito rápido
+
+
+Changing the value of an element’s attribute
+// index.js
+var paragraph = document.getElementById('paragraph');
+contentDiv (???? - paragraph instead??).setAttribute('id', 'info-paragraph');
+
+Creating a new element’s attribute
+
+contentDiv strike's back again. should be element.
+
+Removing an existing element’s attribute
+
+Exercise
+Remove the class (ID!!!) attribute from the paragraph element.

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Canvas Intro</title>
+
+  <style>
+    canvas {
+      border: 1px solid red;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="example" width="150" height="150"></canvas>
+
+  <script>
+    function draw() {
+      var canvas = document.getElementById('example');
+      var ctx = canvas.getContext('2d');
+
+      // background square
+      ctx.lineWidth = "5";
+      ctx.beginPath();
+      ctx.moveTo(12, 2);
+      ctx.lineTo(138, 2);
+      ctx.arc(138, 12, 10, Math.PI*1.5, 0);
+      ctx.lineTo(148, 138);
+      ctx.arc(138, 138, 10, 0, Math.PI/2);
+      ctx.lineTo(12, 148);
+      ctx.arc(12, 138, 10, Math.PI/2, Math.PI);
+      ctx.lineTo(2, 12);
+      ctx.arc(12, 12, 10, Math.PI, Math.PI*1.5);
+      ctx.stroke();
+      ctx.fillStyle = 'orange';
+      ctx.fill();
+      ctx.closePath();
+
+      // circle
+      ctx.beginPath();
+      ctx.arc(35, 115, 15, 0, Math.PI*2);
+      ctx.fillStyle = 'white';
+      ctx.fill();
+
+      ctx.lineWidth = "20";
+      ctx.strokeStyle = 'white';
+
+      // arc 1
+      ctx.beginPath();
+      ctx.arc(20, 130, 65, Math.PI*1.5, 0);
+      ctx.stroke();
+      ctx.closePath();
+
+      // arc 2
+      ctx.beginPath();
+      ctx.arc(20, 130, 100, Math.PI*1.5, 0);
+      ctx.stroke();
+      ctx.closePath();
+    }
+    draw();
+  </script>
+</body>
+</html>
